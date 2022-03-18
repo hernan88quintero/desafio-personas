@@ -1,0 +1,14 @@
+<p style="color: red"><%= notice %></p>
+
+<h1 style="color: green">Persona</h1>
+
+<%= render @persona %>
+
+
+
+<div>
+  <%= link_to "Modificar persona", edit_persona_path(@persona), style: "text-decoration:none" %> |
+  <%= link_to "Volver a la lista", personas_path, style: "text-decoration:none" %><br><br>
+
+  <%= button_to "Eliminar esta persona", @persona, method: :delete %>
+</div>
